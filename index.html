@@ -1,34 +1,1474 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Impulso Local Magdalena: soluciones digitales y de organización para negocios locales.">
+  <meta name="description"
+    content="Impulso Local Magdalena: soluciones digitales y de organización para negocios locales.">
+
   <title>Impulso Local Magdalena | Servicios para tu negocio</title>
+
   <style>
-    :root{--azul:#174a52;--azul-oscuro:#0d343b;--terracota:#c66d52;--terracota-oscuro:#a7523c;--crema:#f4ebdd;--blanco:#fffaf2;--gris:#647472;--linea:rgba(23,74,82,.15)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--crema);color:var(--azul);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.contenedor{width:min(1120px,calc(100% - 40px));margin:auto}
-    header{position:sticky;top:0;z-index:5;background:rgba(244,235,221,.94);border-bottom:1px solid var(--linea);backdrop-filter:blur(12px)}.barra{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}.marca{display:flex;align-items:center;gap:11px;font-weight:800}.marca img{width:46px;height:46px;object-fit:cover;border-radius:50%;background:var(--azul)}.marca small{display:block;color:var(--terracota);font-size:10px;letter-spacing:2px;text-transform:uppercase}.navegacion{display:flex;gap:20px;font-size:14px;font-weight:700}.boton{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;font-weight:800;font-size:14px;border:0;cursor:pointer}.boton-principal{color:var(--blanco);background:var(--terracota)}.boton-principal:hover{background:var(--terracota-oscuro)}.boton-azul{color:var(--blanco);background:var(--azul)}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px;padding:92px 0 100px}.etiqueta{color:var(--terracota-oscuro);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{max-width:700px;margin:18px 0;color:var(--azul-oscuro);font-family:Georgia,'Times New Roman',serif;font-size:clamp(46px,7vw,84px);line-height:.96;letter-spacing:-4px}.hero h1 em{color:var(--terracota);font-style:normal}.hero p{max-width:590px;color:var(--gris);font-size:19px}.acciones{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}.hero-art{min-height:400px;padding:18px;border:9px solid var(--azul);border-radius:190px 190px 25px 25px;background:var(--azul-oscuro);box-shadow:0 24px 50px rgba(13,52,59,.16);transform:rotate(2deg)}.hero-art img{width:100%;height:100%;min-height:365px;object-fit:cover;border-radius:155px 155px 14px 14px}
-    .franja{padding:54px 0;color:var(--blanco);background:var(--azul)}.franja-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.franja h2,.seccion h2{margin:12px 0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-2px}.franja p{margin:8px 0;color:rgba(255,250,242,.78)}.problemas{display:grid;gap:14px}.problema{padding:14px 0;border-bottom:1px solid rgba(244,235,221,.25);font-weight:700}.problema span{display:inline-block;width:38px;color:var(--terracota)}
-    .seccion{padding:90px 0}.encabezado-seccion{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:40px}.encabezado-seccion p{max-width:420px;color:var(--gris)}.colecciones{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.coleccion{min-height:290px;padding:26px;background:var(--blanco);border:1px solid var(--linea);border-top:5px solid var(--terracota);box-shadow:0 10px 25px rgba(13,52,59,.05)}.coleccion.azul{color:var(--blanco);background:var(--azul)}.numero{color:var(--terracota);font-family:Georgia,serif;font-size:26px;font-weight:800}.coleccion h3{margin:22px 0 10px;font-family:Georgia,serif;font-size:28px;line-height:1}.coleccion p{color:var(--gris);font-size:14px}.coleccion.azul p{color:rgba(255,250,242,.75)}.coleccion ul{padding:0;margin:20px 0 0;list-style:none;color:var(--gris);font-size:14px}.coleccion.azul ul{color:rgba(255,250,242,.82)}.coleccion li{margin:8px 0}.coleccion li::before{content:'✓';margin-right:8px;color:var(--terracota);font-weight:bold}
-    .paquetes{background:#eaddcd}.paquetes h2{text-align:center}.subtitulo{text-align:center;max-width:600px;margin:0 auto 38px;color:var(--gris)}.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tarjeta{padding:30px;background:var(--blanco);border:1px solid var(--linea)}.tarjeta.destacada{color:var(--blanco);background:var(--azul);transform:translateY(-10px)}.tarjeta-estrella{border:2px solid var(--terracota);background:#fff4e8}.tarjeta-estrella .tag{color:var(--blanco);background:var(--terracota)}.tag{display:inline-block;padding:6px 10px;border-radius:99px;color:var(--terracota-oscuro);background:rgba(198,109,82,.14);font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.destacada .tag{color:var(--blanco);background:var(--terracota)}.tarjeta h3{font-family:Georgia,serif;font-size:30px;line-height:1.05}.precio{display:block;margin:16px 0;color:var(--terracota-oscuro);font-size:24px;font-weight:800}.destacada .precio{color:#e8ac8c}.tarjeta p{min-height:85px;color:var(--gris)}.destacada p{color:rgba(255,250,242,.75)}.promocion{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:24px;padding:25px 30px;color:var(--blanco);background:var(--terracota)}.promocion h3{margin:0;font-family:Georgia,serif;font-size:25px}.promocion p{margin:0;color:rgba(255,250,242,.85)}
-    .pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.paso{padding-top:15px;border-top:2px solid var(--terracota)}.paso strong{color:var(--terracota);font-family:Georgia,serif;font-size:25px}.paso h3{font-family:Georgia,serif;font-size:24px}.paso p{color:var(--gris)}.contacto{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--blanco)}.contacto-imagen{min-height:500px;background:#eaddcd}.contacto-imagen img{width:100%;height:100%;min-height:500px;object-fit:cover}.contacto-texto{padding:70px}.contacto-texto h2{margin:15px 0;font-family:Georgia,serif;font-size:clamp(38px,5vw,66px);line-height:.98}.contacto-texto p{color:var(--gris);font-size:17px}.nota{padding-left:15px;border-left:3px solid var(--terracota);font-size:14px!important}.faq{padding:90px 0;color:var(--blanco);background:var(--azul)}.faq h2{font-family:Georgia,serif;font-size:46px}.pregunta{padding:18px 0;border-bottom:1px solid rgba(255,250,242,.25)}.pregunta summary{cursor:pointer;font-weight:700}.pregunta p{color:rgba(255,250,242,.75)}footer{padding:40px 0;color:rgba(255,250,242,.72);background:var(--azul-oscuro)}.pie{display:flex;justify-content:space-between;gap:20px;align-items:center}.pie strong{color:var(--blanco)}footer small{color:var(--terracota)}
-    @media(max-width:800px){.navegacion{display:none}.hero,.franja-grid,.contacto{grid-template-columns:1fr}.hero{padding:60px 0 75px;gap:40px}.hero h1{font-size:55px;letter-spacing:-2px}.hero-art{min-height:330px}.hero-art img{min-height:295px}.colecciones,.tarjetas,.pasos{grid-template-columns:1fr}.tarjeta.destacada{transform:none}.encabezado-seccion{display:block}.encabezado-seccion p{margin-top:20px}.promocion{grid-template-columns:1fr}.contacto-texto{padding:55px 25px}.contacto-imagen,.contacto-imagen img{min-height:330px}.pie{align-items:flex-start;flex-direction:column}}
+    :root {
+      --azul: #174a52;
+      --azul-oscuro: #0d343b;
+      --terracota: #c66d52;
+      --terracota-oscuro: #a7523c;
+      --crema: #f4ebdd;
+      --blanco: #fffaf2;
+      --gris: #647472;
+      --linea: rgba(23, 74, 82, .15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--crema);
+      color: var(--azul);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contenedor {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(244, 235, 221, .94);
+      border-bottom: 1px solid var(--linea);
+      backdrop-filter: blur(12px);
+    }
+
+    .barra {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 800;
+    }
+
+    .marca img {
+      width: 46px;
+      height: 46px;
+      object-fit: cover;
+      border-radius: 50%;
+      background: var(--azul);
+    }
+
+    .marca small {
+      display: block;
+      color: var(--terracota);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .navegacion {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 19px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 14px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .boton-principal {
+      color: var(--blanco);
+      background: var(--terracota);
+    }
+
+    .boton-principal:hover {
+      background: var(--terracota-oscuro);
+    }
+
+    .boton-azul {
+      color: var(--blanco);
+      background: var(--azul);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 60px;
+      padding: 92px 0 100px;
+    }
+
+    .etiqueta {
+      color: var(--terracota-oscuro);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 700px;
+      margin: 18px 0;
+      color: var(--azul-oscuro);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(46px, 7vw, 84px);
+      line-height: .96;
+      letter-spacing: -4px;
+    }
+
+    .hero h1 em {
+      color: var(--terracota);
+      font-style: normal;
+    }
+
+    .hero p {
+      max-width: 590px;
+      color: var(--gris);
+      font-size: 19px;
+    }
+
+    .acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .hero-art {
+      min-height: 400px;
+      padding: 18px;
+      border: 9px solid var(--azul);
+      border-radius: 190px 190px 25px 25px;
+      background: var(--azul-oscuro);
+      box-shadow: 0 24px 50px rgba(13, 52, 59, .16);
+      transform: rotate(2deg);
+    }
+
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      min-height: 365px;
+      object-fit: cover;
+      border-radius: 155px 155px 14px 14px;
+    }
+
+    /* =========================
+       FRANJA
+    ========================= */
+
+    .franja {
+      padding: 54px 0;
+      color: var(--blanco);
+      background: var(--azul);
+    }
+
+    .franja-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .franja h2,
+    .seccion h2 {
+      margin: 12px 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .franja p {
+      margin: 8px 0;
+      color: rgba(255, 250, 242, .78);
+    }
+
+    .problemas {
+      display: grid;
+      gap: 14px;
+    }
+
+    .problema {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(244, 235, 221, .25);
+      font-weight: 700;
+    }
+
+    .problema span {
+      display: inline-block;
+      width: 38px;
+      color: var(--terracota);
+    }
+
+    /* =========================
+       SECCIONES
+    ========================= */
+
+    .seccion {
+      padding: 90px 0;
+    }
+
+    .encabezado-seccion {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 45px;
+      margin-bottom: 40px;
+    }
+
+    .encabezado-seccion p {
+      max-width: 420px;
+      color: var(--gris);
+    }
+
+    /* =========================
+       COLECCIONES
+    ========================= */
+
+    .colecciones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .coleccion {
+      min-height: 290px;
+      padding: 26px;
+      background: var(--blanco);
+      border: 1px solid var(--linea);
+      border-top: 5px solid var(--terracota);
+      box-shadow: 0 10px 25px rgba(13, 52, 59, .05);
+    }
+
+    .coleccion.azul {
+      color: var(--blanco);
+      background: var(--azul);
+    }
+
+    .numero {
+      color: var(--terracota);
+      font-family: Georgia, serif;
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .coleccion h3 {
+      margin: 22px 0 10px;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .coleccion p {
+      color: var(--gris);
+      font-size: 14px;
+    }
+
+    .coleccion.azul p {
+      color: rgba(255, 250, 242, .75);
+    }
+
+    .coleccion ul {
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+      color: var(--gris);
+      font-size: 14px;
+    }
+
+    .coleccion.azul ul {
+      color: rgba(255, 250, 242, .82);
+    }
+
+    .coleccion li {
+      margin: 8px 0;
+    }
+
+    .coleccion li::before {
+      content: '✓';
+      margin-right: 8px;
+      color: var(--terracota);
+      font-weight: bold;
+    }
+
+    /* =========================
+       PAQUETES
+    ========================= */
+
+    .paquetes {
+      background: #eaddcd;
+    }
+
+    .paquetes h2 {
+      text-align: center;
+    }
+
+    .subtitulo {
+      max-width: 600px;
+      margin: 0 auto 38px;
+      color: var(--gris);
+      text-align: center;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .tarjeta {
+      padding: 30px;
+      background: var(--blanco);
+      border: 1px solid var(--linea);
+    }
+
+    .tarjeta.destacada {
+      color: var(--blanco);
+      background: var(--azul);
+      transform: translateY(-10px);
+    }
+
+    .tarjeta-estrella {
+      background: #fff4e8;
+      border: 2px solid var(--terracota);
+    }
+
+    .tarjeta-estrella .tag {
+      color: var(--blanco);
+      background: var(--terracota);
+    }
+
+    /* Efecto al pasar el mouse por las ofertas */
+    .tarjeta {
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-8px);
+      border-color: var(--terracota);
+      box-shadow: 0 18px 35px rgba(13, 52, 59, 0.18);
+    }
+
+    .tarjeta.destacada:hover {
+      transform: translateY(-16px) scale(1.02);
+      border-color: var(--terracota);
+      box-shadow: 0 22px 42px rgba(13, 52, 59, 0.28);
+    }
+
+    .tarjeta-estrella:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: var(--terracota-oscuro);
+      box-shadow: 0 20px 38px rgba(198, 109, 82, 0.25);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 99px;
+      color: var(--terracota-oscuro);
+      background: rgba(198, 109, 82, .14);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .destacada .tag {
+      color: var(--blanco);
+      background: var(--terracota);
+    }
+
+    .tarjeta h3 {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      line-height: 1.05;
+    }
+
+    .precio {
+      display: block;
+      margin: 16px 0;
+      color: var(--terracota-oscuro);
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .destacada .precio {
+      color: #e8ac8c;
+    }
+
+    .tarjeta p {
+      min-height: 85px;
+      color: var(--gris);
+    }
+
+    .destacada p {
+      color: rgba(255, 250, 242, .75);
+    }
+
+    /* =========================
+       PROMOCIÓN
+    ========================= */
+
+    .promocion {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      margin-top: 24px;
+      padding: 25px 30px;
+      color: var(--blanco);
+      background: var(--terracota);
+    }
+
+    .promocion h3 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+
+    .promocion p {
+      margin: 0;
+      color: rgba(255, 250, 242, .85);
+    }
+
+    /* =========================
+       PASOS
+    ========================= */
+
+    .pasos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .paso {
+      padding-top: 15px;
+      border-top: 2px solid var(--terracota);
+    }
+
+    .paso strong {
+      color: var(--terracota);
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+
+    .paso h3 {
+      font-family: Georgia, serif;
+      font-size: 24px;
+    }
+
+    .paso p {
+      color: var(--gris);
+    }
+
+    /* =========================
+       CONTACTO
+    ========================= */
+
+    .contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      background: var(--blanco);
+    }
+
+    .contacto-imagen {
+      min-height: 500px;
+      background: #eaddcd;
+    }
+
+    .contacto-imagen img {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      object-fit: cover;
+    }
+
+    .contacto-texto {
+      padding: 70px;
+    }
+
+    .contacto-texto h2 {
+      margin: 15px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: .98;
+    }
+
+    .contacto-texto p {
+      color: var(--gris);
+      font-size: 17px;
+    }
+
+    .nota {
+      padding-left: 15px;
+      border-left: 3px solid var(--terracota);
+      font-size: 14px !important;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq {
+      padding: 90px 0;
+      color: var(--blanco);
+      background: var(--azul);
+    }
+
+    .faq h2 {
+      font-family: Georgia, serif;
+      font-size: 46px;
+    }
+
+    .pregunta {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255, 250, 242, .25);
+    }
+
+    .pregunta summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .pregunta p {
+      color: rgba(255, 250, 242, .75);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 40px 0;
+      color: rgba(255, 250, 242, .72);
+      background: var(--azul-oscuro);
+    }
+
+    .pie {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .pie strong {
+      color: var(--blanco);
+    }
+
+    footer small {
+      color: var(--terracota);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .navegacion {
+        display: none;
+      }
+
+      .hero,
+      .franja-grid,
+      .contacto {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 60px 0 75px;
+        gap: 40px;
+      }
+
+      .hero h1 {
+        font-size: 55px;
+        letter-spacing: -2px;
+      }
+
+      .hero-art {
+        min-height: 330px;
+      }
+
+      .hero-art img {
+        min-height: 295px;
+      }
+
+      .colecciones,
+      .tarjetas,
+      .pasos {
+        grid-template-columns: 1fr;
+      }
+
+      .tarjeta.destacada {
+        transform: none;
+      }
+
+      .encabezado-seccion {
+        display: block;
+      }
+
+      .encabezado-seccion p {
+        margin-top: 20px;
+      }
+
+      .promocion {
+        grid-template-columns: 1fr;
+      }
+
+      .contacto-texto {
+        padding: 55px 25px;
+      }
+
+      .contacto-imagen,
+      .contacto-imagen img {
+        min-height: 330px;
+      }
+
+      .pie {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <!-- Para usar imágenes locales, guardalas en ./imagenes/ y reemplazá las rutas de ejemplo. -->
-  <header><div class="contenedor barra"><a class="marca" href="#inicio"><img src="./imagenes/imagotipo.jpeg" alt="Impulso Local"><span>Impulso Local<small>Magdalena</small></span></a><nav class="navegacion"><a href="#servicios">Servicios</a><a href="#paquetes">Paquetes</a><a href="#contacto">Contacto</a></nav><a class="boton boton-azul" href="https://wa.me/542224000000" target="_blank">WhatsApp</a></div></header>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+    <div class="contenedor barra">
+
+      <a class="marca" href="#inicio">
+        <img
+          src="./imagenes/imagotipo.jpeg"
+          alt="Impulso Local"
+        >
+
+        <span>
+          Impulso Local
+          <small>Magdalena</small>
+        </span>
+      </a>
+
+      <nav class="navegacion">
+        <a href="#servicios">Servicios</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a
+        class="boton boton-azul"
+        href="https://wa.me/542224000000"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+  </header>
+
+
   <main>
-    <section id="inicio" class="contenedor hero"><div><span class="etiqueta">Servicios digitales para negocios reales</span><h1>Tu negocio puede funcionar de una manera <em>más simple.</em></h1><p>Ordenamos información, simplificamos tareas y ayudamos a que tu negocio se vea donde están tus clientes. Sin vueltas y sin hablarte en difícil.</p><div class="acciones"><a class="boton boton-principal" href="https://wa.me/542224000000" target="_blank">Contanos qué necesitás ↗</a><a class="boton boton-azul" href="#servicios">Ver servicios</a></div></div><div class="hero-art"><img src="./imagenes/portada-facebook.png" alt="Portada corporativa de Impulso Local"></div></section>
-    <section class="franja"><div class="contenedor franja-grid"><div><span class="etiqueta" style="color:#dfaa8d">Quizás te pasa</span><h2>Tenés mil cosas para hacer y la información queda desparramada.</h2></div><div class="problemas"><div class="problema"><span>01</span> Publicar queda para después.</div><div class="problema"><span>02</span> Respondés lo mismo una y otra vez.</div><div class="problema"><span>03</span> Pedidos, precios y clientes viven en distintos lugares.</div></div></div></section>
-    <section id="servicios" class="contenedor seccion"><div class="encabezado-seccion"><div><span class="etiqueta">Qué podemos resolver</span><h2>Una solución para cada parte del día a día.</h2></div><p>No todos los negocios necesitan lo mismo. Podés empezar por una sola necesidad y sumar otras herramientas cuando tenga sentido.</p></div><div class="colecciones"><article class="coleccion"><span class="numero">01</span><h3>Planillas</h3><p>Herramientas listas para usar, no un Excel más.</p><ul><li>Liquidaciones y sueldos — <b>$18.000</b></li><li>Stock — <b>$15.000</b></li><li>Ventas — <b>$15.000</b></li><li><b>Combo Administración — $40.000</b></li></ul></article><article class="coleccion"><span class="numero">02</span><h3>Redes sociales</h3><p>Para que comunicar tu negocio no dependa de encontrar un rato libre.</p><ul><li>Configuración de perfiles — <b>$15.000</b></li><li>Meta Business Suite — <b>$20.000</b></li><li>8 publicaciones listas — <b>$25.000</b></li><li><b>Combo Redes Inicial — $30.000</b></li><li><b>Combo Redes Completo — $50.000</b></li></ul></article><article class="coleccion azul"><span class="numero">03</span><h3>Aplicaciones administrativas</h3><p>Herramientas simples para atender, registrar y trabajar mejor.</p><ul><li>App móvil — <b>desde $120.000</b></li><li>App web — <b>desde $100.000</b></li><li>WhatsApp Business + catálogo — <b>$30.000</b></li><li><b>Combo WhatsApp + Catálogo — $25.000</b></li></ul></article><article class="coleccion"><span class="numero">04</span><h3>Presencia web</h3><p>Para que tu negocio esté donde las personas buscan antes de comprar.</p><ul><li>Página web — <b>$80.000</b></li><li>Presencia en Google — <b>$25.000</b></li><li><b>Combo Presencia Digital — $95.000</b></li></ul></article><article class="coleccion"><span class="numero">05</span><h3>Elementos gráficos</h3><p>Piezas listas para informar, vender y mantener una imagen ordenada.</p><ul><li>Calendario personalizado — <b>$12.000</b></li><li>Banner — <b>$8.000</b></li><li>Catálogo digital / lista de precios — <b>$20.000</b></li><li><b>Combo Imagen Comercial — $40.000</b></li></ul></article><article class="coleccion azul"><span class="numero">06</span><h3>Mantenimiento</h3><p>Para que lo que armamos siga actualizado y funcionando.</p><ul><li>Mantenimiento mensual — <b>$30.000 / mes</b></li><li>Actualización de precios y productos.</li><li>Cambios menores en planillas, catálogo, web y Google.</li><li>Los desarrollos nuevos se presupuestan aparte.</li></ul></article></div></section>
-    <section id="paquetes" class="seccion paquetes"><div class="contenedor"><span class="etiqueta" style="display:block;text-align:center">Combos destacados</span><h2>Ofertas claras para empezar hoy.</h2><p class="subtitulo">Elegí el combo que más se parezca al momento de tu negocio. Los precios están expresados en pesos argentinos.</p><div class="tarjetas"><article class="tarjeta"><span class="tag">Combo 1 · Ahorrás $8.000</span><h3>Poné tu negocio en orden</h3><strong class="precio">$40.000</strong><p>Planilla de ventas + planilla de stock + planilla de liquidaciones y sueldos.</p><a class="boton boton-azul" href="https://wa.me/542224000000" target="_blank">Consultar combo</a></article><article class="tarjeta destacada"><span class="tag">Combo 2 · Ahorrás $10.000</span><h3>Que te encuentren</h3><strong class="precio">$50.000</strong><p>Configuración de perfiles + Meta Business Suite + 8 publicaciones listas para publicar.</p><a class="boton boton-principal" href="https://wa.me/542224000000" target="_blank">Consultar combo</a></article><article class="tarjeta"><span class="tag">Combo 3 · Ahorrás $10.000</span><h3>Presencia Local</h3><strong class="precio">$95.000</strong><p>Página web + presencia en Google + configuración básica de la información del negocio.</p><a class="boton boton-azul" href="https://wa.me/542224000000" target="_blank">Consultar combo</a></article><article class="tarjeta tarjeta-estrella"><span class="tag">Combo 4 · Combo estrella</span><h3>Negocio Completo</h3><strong class="precio">$130.000</strong><p>Planilla de ventas + stock + WhatsApp Business con catálogo + presencia en Google + catálogo digital.</p><a class="boton boton-principal" href="https://wa.me/542224000000" target="_blank">Quiero este combo</a></article></div><div class="promocion"><h3>Una forma simple de arrancar.</h3><p>Los combos reúnen las herramientas que más puede necesitar un comercio de Magdalena. Escribinos y vemos juntos cuál conviene.</p></div></div></section>
-    <section class="contenedor seccion"><span class="etiqueta">Cómo trabajamos</span><h2>Primero entendemos. Después armamos.</h2><div class="pasos"><article class="paso"><strong>01</strong><h3>Te escuchamos</h3><p>Nos contás qué te ocupa tiempo y qué querés mejorar.</p></article><article class="paso"><strong>02</strong><h3>Lo ordenamos</h3><p>Elegimos una herramienta simple y adecuada para tu negocio.</p></article><article class="paso"><strong>03</strong><h3>Lo dejamos funcionando</h3><p>Te explicamos cómo usarlo y quedamos cerca para acompañarte.</p></article></div></section>
-    <section id="contacto" class="contacto"><div class="contacto-imagen"><img src="./imagenes/slide-4.png" alt="Muestra de trabajo de Impulso Local"></div><div class="contacto-texto"><span class="etiqueta">¿Lo conversamos?</span><h2>Contanos qué podría mejorar en tu negocio.</h2><p>Puede ser una página, una planilla, un catálogo, una presencia más clara en Google o una tarea que ya no quieras hacer todos los días.</p><a class="boton boton-principal" href="https://wa.me/542224000000" target="_blank">Pedir presupuesto sin compromiso ↗</a><p class="nota">Impulso Local Magdalena<br><strong>Hacemos que tu negocio también esté donde están tus clientes.</strong></p></div></section>
-    <section class="faq"><div class="contenedor"><span class="etiqueta" style="color:#dfaa8d">Preguntas frecuentes</span><h2>Antes de escribirnos, quizás querés saber esto.</h2><details class="pregunta"><summary>¿Tengo que contratar un paquete completo?</summary><p>No. Podés empezar por una sola necesidad y sumar otras herramientas cuando tenga sentido.</p></details><details class="pregunta"><summary>¿Pueden ayudarme aunque no tenga redes?</summary><p>Sí. Podemos ayudarte desde el primer paso, incluso si todavía no tenés perfiles creados.</p></details><details class="pregunta"><summary>¿Cómo se arma el presupuesto?</summary><p>Primero nos contás qué necesitás. Después te presentamos una propuesta clara, con alcance y valor.</p></details></div></section>
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section id="inicio" class="contenedor hero">
+
+      <div>
+
+        <span class="etiqueta">
+          Servicios digitales para negocios reales
+        </span>
+
+        <h1>
+          Tu negocio puede funcionar de una manera
+          <em>más simple.</em>
+        </h1>
+
+        <p>
+          Ordenamos información, simplificamos tareas y ayudamos a que
+          tu negocio se vea donde están tus clientes. Sin vueltas y sin
+          hablarte en difícil.
+        </p>
+
+        <div class="acciones">
+
+          <a
+            class="boton boton-principal"
+            href="https://wa.me/542224000000"
+            target="_blank"
+          >
+            Contanos qué necesitás ↗
+          </a>
+
+          <a
+            class="boton boton-azul"
+            href="#servicios"
+          >
+            Ver servicios
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-art">
+
+        <img
+          src="./imagenes/portada-facebook.png"
+          alt="Portada corporativa de Impulso Local"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FRANJA / PROBLEMAS
+    ========================= -->
+
+    <section class="franja">
+
+      <div class="contenedor franja-grid">
+
+        <div>
+
+          <span
+            class="etiqueta"
+            style="color:#dfaa8d"
+          >
+            Quizás te pasa
+          </span>
+
+          <h2>
+            Tenés mil cosas para hacer y la información queda desparramada.
+          </h2>
+
+        </div>
+
+        <div class="problemas">
+
+          <div class="problema">
+            <span>01</span>
+            Publicar queda para después.
+          </div>
+
+          <div class="problema">
+            <span>02</span>
+            Respondés lo mismo una y otra vez.
+          </div>
+
+          <div class="problema">
+            <span>03</span>
+            Pedidos, precios y clientes viven en distintos lugares.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICIOS
+    ========================= -->
+
+    <section
+      id="servicios"
+      class="contenedor seccion"
+    >
+
+      <div class="encabezado-seccion">
+
+        <div>
+
+          <span class="etiqueta">
+            Qué podemos resolver
+          </span>
+
+          <h2>
+            Una solución para cada parte del día a día.
+          </h2>
+
+        </div>
+
+        <p>
+          No todos los negocios necesitan lo mismo. Podés empezar por una
+          sola necesidad y sumar otras herramientas cuando tenga sentido.
+        </p>
+
+      </div>
+
+
+      <div class="colecciones">
+
+        <!-- PLANILLAS -->
+
+        <article class="coleccion">
+
+          <span class="numero">01</span>
+
+          <h3>Planillas</h3>
+
+          <p>
+            Herramientas listas para usar, no un Excel más.
+          </p>
+
+          <ul>
+            <li>
+              Liquidaciones y sueldos — <b>$18.000</b>
+            </li>
+
+            <li>
+              Stock — <b>$15.000</b>
+            </li>
+
+            <li>
+              Ventas — <b>$15.000</b>
+            </li>
+
+            <li>
+              <b>Combo Administración — $40.000</b>
+            </li>
+          </ul>
+
+        </article>
+
+
+        <!-- REDES SOCIALES -->
+
+        <article class="coleccion">
+
+          <span class="numero">02</span>
+
+          <h3>Redes sociales</h3>
+
+          <p>
+            Para que comunicar tu negocio no dependa de encontrar un rato libre.
+          </p>
+
+          <ul>
+
+            <li>
+              Configuración de perfiles — <b>$15.000</b>
+            </li>
+
+            <li>
+              Meta Business Suite — <b>$20.000</b>
+            </li>
+
+            <li>
+              8 publicaciones listas — <b>$25.000</b>
+            </li>
+
+            <li>
+              <b>Combo Redes Inicial — $30.000</b>
+            </li>
+
+            <li>
+              <b>Combo Redes Completo — $50.000</b>
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- APLICACIONES -->
+
+        <article class="coleccion azul">
+
+          <span class="numero">03</span>
+
+          <h3>Aplicaciones administrativas</h3>
+
+          <p>
+            Herramientas simples para atender, registrar y trabajar mejor.
+          </p>
+
+          <ul>
+
+            <li>
+              App móvil — <b>desde $120.000</b>
+            </li>
+
+            <li>
+              App web — <b>desde $100.000</b>
+            </li>
+
+            <li>
+              WhatsApp Business + catálogo — <b>$30.000</b>
+            </li>
+
+            <li>
+              <b>Combo WhatsApp + Catálogo — $25.000</b>
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- PRESENCIA WEB -->
+
+        <article class="coleccion">
+
+          <span class="numero">04</span>
+
+          <h3>Presencia web</h3>
+
+          <p>
+            Para que tu negocio esté donde las personas buscan antes de comprar.
+          </p>
+
+          <ul>
+
+            <li>
+              Página web — <b>$80.000</b>
+            </li>
+
+            <li>
+              Presencia en Google — <b>$25.000</b>
+            </li>
+
+            <li>
+              <b>Combo Presencia Digital — $95.000</b>
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- ELEMENTOS GRÁFICOS -->
+
+        <article class="coleccion">
+
+          <span class="numero">05</span>
+
+          <h3>Elementos gráficos</h3>
+
+          <p>
+            Piezas listas para informar, vender y mantener una imagen ordenada.
+          </p>
+
+          <ul>
+
+            <li>
+              Calendario personalizado — <b>$12.000</b>
+            </li>
+
+            <li>
+              Banner — <b>$8.000</b>
+            </li>
+
+            <li>
+              Catálogo digital / lista de precios — <b>$20.000</b>
+            </li>
+
+            <li>
+              <b>Combo Imagen Comercial — $40.000</b>
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- MANTENIMIENTO -->
+
+        <article class="coleccion azul">
+
+          <span class="numero">06</span>
+
+          <h3>Mantenimiento</h3>
+
+          <p>
+            Para que lo que armamos siga actualizado y funcionando.
+          </p>
+
+          <ul>
+
+            <li>
+              Mantenimiento mensual — <b>$30.000 / mes</b>
+            </li>
+
+            <li>
+              Actualización de precios y productos.
+            </li>
+
+            <li>
+              Cambios menores en planillas, catálogo, web y Google.
+            </li>
+
+            <li>
+              Los desarrollos nuevos se presupuestan aparte.
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAQUETES
+    ========================= -->
+
+    <section
+      id="paquetes"
+      class="seccion paquetes"
+    >
+
+      <div class="contenedor">
+
+        <span
+          class="etiqueta"
+          style="display:block;text-align:center"
+        >
+          Combos destacados
+        </span>
+
+        <h2>
+          Ofertas claras para empezar hoy.
+        </h2>
+
+        <p class="subtitulo">
+          Elegí el combo que más se parezca al momento de tu negocio.
+          Los precios están expresados en pesos argentinos.
+        </p>
+
+
+        <div class="tarjetas">
+
+          <!-- COMBO 1 -->
+
+          <article class="tarjeta">
+
+            <span class="tag">
+              Combo 1 · Ahorrás $8.000
+            </span>
+
+            <h3>
+              Poné tu negocio en orden
+            </h3>
+
+            <strong class="precio">
+              $40.000
+            </strong>
+
+            <p>
+              Planilla de ventas + planilla de stock +
+              planilla de liquidaciones y sueldos.
+            </p>
+
+            <a
+              class="boton boton-azul"
+              href="https://wa.me/542224000000"
+              target="_blank"
+            >
+              Consultar combo
+            </a>
+
+          </article>
+
+
+          <!-- COMBO 2 -->
+
+          <article class="tarjeta destacada">
+
+            <span class="tag">
+              Combo 2 · Ahorrás $10.000
+            </span>
+
+            <h3>
+              Que te encuentren
+            </h3>
+
+            <strong class="precio">
+              $50.000
+            </strong>
+
+            <p>
+              Configuración de perfiles + Meta Business Suite +
+              8 publicaciones listas para publicar.
+            </p>
+
+            <a
+              class="boton boton-principal"
+              href="https://wa.me/542224000000"
+              target="_blank"
+            >
+              Consultar combo
+            </a>
+
+          </article>
+
+
+          <!-- COMBO 3 -->
+
+          <article class="tarjeta">
+
+            <span class="tag">
+              Combo 3 · Ahorrás $10.000
+            </span>
+
+            <h3>
+              Presencia Local
+            </h3>
+
+            <strong class="precio">
+              $95.000
+            </strong>
+
+            <p>
+              Página web + presencia en Google +
+              configuración básica de la información del negocio.
+            </p>
+
+            <a
+              class="boton boton-azul"
+              href="https://wa.me/542224000000"
+              target="_blank"
+            >
+              Consultar combo
+            </a>
+
+          </article>
+
+
+          <!-- COMBO 4 -->
+
+          <article class="tarjeta tarjeta-estrella">
+
+            <span class="tag">
+              Combo 4 · Combo estrella
+            </span>
+
+            <h3>
+              Negocio Completo
+            </h3>
+
+            <strong class="precio">
+              $130.000
+            </strong>
+
+            <p>
+              Planilla de ventas + stock + WhatsApp Business con catálogo +
+              presencia en Google + catálogo digital.
+            </p>
+
+            <a
+              class="boton boton-principal"
+              href="https://wa.me/542224000000"
+              target="_blank"
+            >
+              Quiero este combo
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="promocion">
+
+          <h3>
+            Una forma simple de arrancar.
+          </h3>
+
+          <p>
+            Los combos reúnen las herramientas que más puede necesitar
+            un comercio de Magdalena. Escribinos y vemos juntos cuál conviene.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CÓMO TRABAJAMOS
+    ========================= -->
+
+    <section class="contenedor seccion">
+
+      <span class="etiqueta">
+        Cómo trabajamos
+      </span>
+
+      <h2>
+        Primero entendemos. Después armamos.
+      </h2>
+
+
+      <div class="pasos">
+
+        <article class="paso">
+
+          <strong>01</strong>
+
+          <h3>
+            Te escuchamos
+          </h3>
+
+          <p>
+            Nos contás qué te ocupa tiempo y qué querés mejorar.
+          </p>
+
+        </article>
+
+
+        <article class="paso">
+
+          <strong>02</strong>
+
+          <h3>
+            Lo ordenamos
+          </h3>
+
+          <p>
+            Elegimos una herramienta simple y adecuada para tu negocio.
+          </p>
+
+        </article>
+
+
+        <article class="paso">
+
+          <strong>03</strong>
+
+          <h3>
+            Lo dejamos funcionando
+          </h3>
+
+          <p>
+            Te explicamos cómo usarlo y quedamos cerca para acompañarte.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================= -->
+
+    <section
+      id="contacto"
+      class="contacto"
+    >
+
+      <div class="contacto-imagen">
+
+        <img
+          src="./imagenes/slide-4.png"
+          alt="Muestra de trabajo de Impulso Local"
+        >
+
+      </div>
+
+
+      <div class="contacto-texto">
+
+        <span class="etiqueta">
+          ¿Lo conversamos?
+        </span>
+
+        <h2>
+          Contanos qué podría mejorar en tu negocio.
+        </h2>
+
+        <p>
+          Puede ser una página, una planilla, un catálogo,
+          una presencia más clara en Google o una tarea que
+          ya no quieras hacer todos los días.
+        </p>
+
+        <a
+          class="boton boton-principal"
+          href="https://wa.me/542224000000"
+          target="_blank"
+        >
+          Pedir presupuesto sin compromiso ↗
+        </a>
+
+        <p class="nota">
+          Impulso Local Magdalena
+          <br>
+          <strong>
+            Hacemos que tu negocio también esté donde están tus clientes.
+          </strong>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FAQ
+    ========================= -->
+
+    <section class="faq">
+
+      <div class="contenedor">
+
+        <span
+          class="etiqueta"
+          style="color:#dfaa8d"
+        >
+          Preguntas frecuentes
+        </span>
+
+        <h2>
+          Antes de escribirnos, quizás querés saber esto.
+        </h2>
+
+
+        <details class="pregunta">
+
+          <summary>
+            ¿Tengo que contratar un paquete completo?
+          </summary>
+
+          <p>
+            No. Podés empezar por una sola necesidad y sumar
+            otras herramientas cuando tenga sentido.
+          </p>
+
+        </details>
+
+
+        <details class="pregunta">
+
+          <summary>
+            ¿Pueden ayudarme aunque no tenga redes?
+          </summary>
+
+          <p>
+            Sí. Podemos ayudarte desde el primer paso,
+            incluso si todavía no tenés perfiles creados.
+          </p>
+
+        </details>
+
+
+        <details class="pregunta">
+
+          <summary>
+            ¿Cómo se arma el presupuesto?
+          </summary>
+
+          <p>
+            Primero nos contás qué necesitás. Después te presentamos
+            una propuesta clara, con alcance y valor.
+          </p>
+
+        </details>
+
+      </div>
+
+    </section>
+
   </main>
-  <footer><div class="contenedor pie"><div><strong>Impulso Local Magdalena</strong><br><small>Lo pensamos juntos.</small></div><span>Servicios digitales y de organización para negocios locales.</span><a class="boton boton-principal" href="https://wa.me/542224000000" target="_blank">Escribir por WhatsApp</a></div></footer>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="contenedor pie">
+
+      <div>
+
+        <strong>
+          Impulso Local Magdalena
+        </strong>
+
+        <br>
+
+        <small>
+          Lo pensamos juntos.
+        </small>
+
+      </div>
+
+      <span>
+        Servicios digitales y de organización para negocios locales.
+      </span>
+
+      <a
+        class="boton boton-principal"
+        href="https://wa.me/542224000000"
+        target="_blank"
+      >
+        Escribir por WhatsApp
+      </a>
+
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
