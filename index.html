@@ -236,19 +236,25 @@
     }
 
     .problema {
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr);
+      column-gap: 14px;
+      align-items: start;
       padding: 14px 0;
-      border-bottom: 1px solid rgba(244, 235, 221, .25);
-      font-weight: 700;
+      border-bottom: 1px solid rgba(244, 235, 221, 0.25);
+      color: var(--blanco);
+      text-align: left;
+      line-height: 1.45;
     }
 
-    .problema span {
-      display: inline-block;
-      width: 38px;
+    .problema-numero {
+      width: auto;
       color: var(--terracota);
+      font-weight: 800;
     }
-    .problema {
-      text-align: justify;
-      text-align-last: left;
+
+    .problema > span:last-child {
+      min-width: 0;
     }
 
 
@@ -819,31 +825,29 @@
 
         </div>
 
-        <div class="problemas">
+          <div class="problemas">
 
-          <div class="problema">
-            <span>01</span>
-            Publicar queda para después.
+              <div class="problema">
+                <span class="problema-numero">01</span>
+                <span>Publicar queda para después.</span>
+              </div>
+
+              <div class="problema">
+                <span class="problema-numero">02</span>
+                <span>Respondés lo mismo una y otra vez.</span>
+              </div>
+
+              <div class="problema">
+                <span class="problema-numero">03</span>
+                <span>Pedidos, precios y clientes viven en distintos lugares.</span>
+              </div>
+
+              <div class="problema">
+                <span class="problema-numero">04</span>
+                <span>Tenés mil cosas para hacer y la información queda desparramada?</span>
+              </div>
           </div>
-
-          <div class="problema">
-            <span>02</span>
-            Respondés lo mismo una y otra vez.
-          </div>
-
-          <div class="problema">
-            <span>03</span>
-            Pedidos, precios y clientes viven en distintos lugares.
-          </div>
-
-          <div class="problema">
-            <span>04</span>
-            Tenés mil cosas para hacer y la información queda desparramada?
-          </div>
-
         </div>
-
-      </div>
 
     </section>
 
