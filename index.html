@@ -11,8 +11,8 @@
 
   <style>
     :root {
-      --azul: #174a52;
-      --azul-oscuro: #0d343b;
+      --azul: #0b3f4b;
+      --azul-oscuro: #061f35;
       --terracota: #c66d52;
       --terracota-oscuro: #a7523c;
       --crema: #f4ebdd;
@@ -55,8 +55,8 @@
       position: sticky;
       top: 0;
       z-index: 5;
-      background: rgba(244, 235, 221, .94);
-      border-bottom: 1px solid var(--linea);
+      background: rgba(244, 235, 221, 0.97);
+      border-bottom: 1px solid rgba(11, 63, 75, 0.18);
       backdrop-filter: blur(12px);
     }
 
@@ -173,22 +173,30 @@
     }
 
     .hero-art {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       min-height: 400px;
       padding: 18px;
+      overflow: hidden;
       border: 9px solid var(--azul);
       border-radius: 190px 190px 25px 25px;
       background: var(--azul-oscuro);
-      box-shadow: 0 24px 50px rgba(13, 52, 59, .16);
+      box-shadow: 0 24px 50px rgba(6, 31, 53, 0.25);
       transform: rotate(2deg);
     }
 
-    .hero-art img {
-      width: 100%;
-      height: 100%;
-      min-height: 365px;
-      object-fit: cover;
-      border-radius: 155px 155px 14px 14px;
-    }
+      .hero-art img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 365px;
+        min-height: 0;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 155px 155px 14px 14px;
+      }
+
 
     /* =========================
        FRANJA
@@ -635,10 +643,15 @@
 
       .hero-art {
         min-height: 330px;
+        padding: 14px;
       }
 
       .hero-art img {
-        min-height: 295px;
+        width: 100%;
+        height: auto;
+        max-height: 295px;
+        min-height: 0;
+        object-fit: contain;
       }
 
       .colecciones,
